@@ -142,21 +142,43 @@ public class AddSupplierCommandTest {
             throw new AssertionError("This method should not be called.");
         }
 
+        /**
+         * Returns true if the same reservation exists in the database.
+         *
+         * @param reservation
+         */
         @Override
         public boolean hasReservation(Reservation reservation) {
             throw new AssertionError("This method should not be called.");
         }
 
+        /**
+         * Deletes the given reservation.
+         * The reservation must exist in the database.
+         *
+         * @param target
+         */
         @Override
         public void deleteReservation(Reservation target) {
             throw new AssertionError("This method should not be called.");
         }
 
+        /**
+         * Adds the given reservation.
+         *
+         * @param reservation
+         */
         @Override
         public void addReservation(Reservation reservation) {
             throw new AssertionError("This method should not be called.");
         }
 
+        /**
+         * Replaces the given reservation {@code target} with {@code editedReservation}.
+         *
+         * @param target
+         * @param editedReservation
+         */
         @Override
         public void setReservation(Reservation target, Reservation editedReservation) {
             throw new AssertionError("This method should not be called.");
@@ -167,6 +189,9 @@ public class AddSupplierCommandTest {
             throw new AssertionError("This method should not be called.");
         }
 
+        /**
+         * Returns an unmodifiable view of the filtered reservation list
+         */
         @Override
         public ObservableList<Reservation> getFilteredReservationList() {
             return null;
@@ -207,9 +232,14 @@ public class AddSupplierCommandTest {
             throw new AssertionError("This method should not be called.");
         }
 
+        /**
+         * Updates the filter of the filtered reservation list to filter by the given {@code predicate}
+         *
+         * @param predicate
+         */
         @Override
         public void updateFilteredReservationList(Predicate<Reservation> predicate) {
-            throw new AssertionError("This method should not be called.");
+
         }
     }
 
